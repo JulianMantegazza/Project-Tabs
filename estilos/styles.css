@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Playball&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+:root {
+  --smokewhite: whitesmoke;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../image/mountain-of-fire.jpg) center/cover fixed;
+  font-family: 'Playball', cursive;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.title {
+  color: black;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.title h2 {
+  margin: 0 auto;
+  text-decoration: underline;
+  width: 75%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1;
+  }
+}
+
+.section-center {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 90vw;
+}
+
+@media screen and (min-width: 990px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.about-img {
+  margin-bottom: 2rem;
+}
+
+.about-img img {
+  border: 4px solid crimson;
+  border-radius: var(--radius);
+  height: 22rem;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .about-img {
+    margin-bottom: 0;
+  }
+
+  .about-center {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.about {
+  background: url(../image/coliseo-romano.jpg);
+  border: 3px solid coral;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.btn-container {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn {
+  background-color: wheat;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-family: 'Patua One', cursive;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  padding: 1rem 0;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+.tab-btn:nth-child(1) {
+  border-top-left-radius: 0.25rem;
+}
+
+.tab-btn:nth-child(3) {
+  border-top-right-radius: 0.25rem;
+}
+
+.tab-btn:hover:not(.active) {
+  color: var(--clr-primary-5);
+  background: var(--smokewhite);
+}
+
+.about-content {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  padding: 2rem 1.5rem;
+}
+
+.content {
+  display: none;
+}
+
+p {
+  color: black;
+  margin-bottom: 1.25rem;
+}
+
+.tab-btn.active {
+  background: var(--smokewhite);
+}
+
+.content.active {
+  display: block;
+}

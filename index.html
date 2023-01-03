@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="Julián Alejandro Mantegazza" />
+        <meta name="description" content="Tabs con temática del libro La Divina Comedia" />
+        <meta name="keywords" content="Divina Comedia" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Proyect: Tabs.</title>
+        <link rel="stylesheet" href="./estilos/styles.css" />
+    </head>
+    <body>
+        <main class="section">
+            <div class="title">
+                <h1>¡La Divina Comedia!</h1>
+                <h2>"Dante's Inferno"</h2>
+            </div>
+            <div class="about-center section-center">
+                <article class="about-img">
+                    <img src="./image/dante.jpg" alt="Photo" />
+                </article>
+                <article class="about">
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="gehenna">Libro I</button>
+                        <button class="tab-btn" data-id="purgatorium">Libro II</button>
+                        <button class="tab-btn" data-id="paradisum">Libro III</button>
+                    </div>
+                    <div class="about-content">
+                        <div class="content active" id="gehenna">
+                            <h3>GEHENNA:</h3>
+                            <p>
+                                A lo largo del trayecto por los 9 círculos del Infierno, se suceden las vívidas descripciones de los pecadores, castigados según la ley del contrapaso. En esta primera fase del viaje, que se presenta como una guerra, el peregrino atraviesa el dolor para superarlo. Con la imprescindible guía de su maestro Virgilio, Dante conoce el mal del más allá, comprende su relación con los pecados de este mundo, y logra recuperar, finalmente, la belleza de las estrellas.
+                            </p>
+                        </div>
+                        <div class="content" id="purgatorium">
+                            <h3>PURGATORIUM:</h3>
+                            <p>
+                                El poeta colabora de manera definitiva en su concepción, ubicación y geografía, relacionando esta gran montaña del Hemisferio Sur con el Paraíso Terrenal, que estaría en su cima. Poblado de penitentes con diverso grado de madurez, aún imperfectos en su expiación, a veces nostálgicos del mundo y del cuerpo, el Purgatorio es un reino de profunda meditación y de dulce melancolía. Dante sube la montaña sagrada que cuando muera, la recorrerá de nuevo para purificarse y merecer el vuelo hasta el centro divino.
+                            </p>
+                        </div>
+                        <div class="content" id="paradisum">
+                            <h3>PARADISUM:</h3>
+                            <p>
+                                Dante, mediante un nuevo y novedoso lenguaje, narra su vuelo por las esferas celestes y el cielo estrellado, y describe su visión del Empíreo. Allí, guiado por su amada Beatrice, el peregrino conocerá su destino de poeta, y su deseo alcanzará el amor que todo lo mueve. El Paraíso de Dante es música y luz, paz y denuncia: es la experiencia única de un homnbre que, con su cuerpo mortal, logró contemplar la gloria inefable de la divinidad.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <script src="./guion/app.js"></script>
+    </body>
+</html>
